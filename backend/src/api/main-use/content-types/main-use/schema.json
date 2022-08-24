@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_uses",
+  "info": {
+    "singularName": "main-use",
+    "pluralName": "main-uses",
+    "displayName": "main_use",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "week_id": {
+      "type": "integer"
+    }
+  }
+}

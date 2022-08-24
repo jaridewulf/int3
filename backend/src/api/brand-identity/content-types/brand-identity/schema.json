@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_identities",
+  "info": {
+    "singularName": "brand-identity",
+    "pluralName": "brand-identities",
+    "displayName": "brand_identity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "explenation": {
+      "type": "string"
+    },
+    "week_id": {
+      "type": "integer"
+    }
+  }
+}

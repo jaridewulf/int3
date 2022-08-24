@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themas",
+  "info": {
+    "singularName": "thema",
+    "pluralName": "themas",
+    "displayName": "thema",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "font": {
+      "type": "string"
+    },
+    "accentColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "fontName": {
+      "type": "string"
+    },
+    "week_id": {
+      "type": "integer"
+    },
+    "header_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
