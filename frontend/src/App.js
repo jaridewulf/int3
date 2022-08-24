@@ -2,6 +2,11 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import "./App.css";
 import { createContext, useState } from "react";
+import Section from "./components/Section";
+import Footer from "./components/Footer";
+import Weights from "./components/Weights";
+import Article from "./components/Article";
+import Variables from "./components/Variables";
 
 export const themeContext = createContext();
 
@@ -25,6 +30,16 @@ function App() {
       >
         <Nav />
         <Header />
+        <Section
+          title={"Variables"}
+          key={2}
+          value={2}
+          sides={[
+            <Article title="weights" number={2.1} content={<Weights />} />,
+            <Article title="variables" number={2.2} content={<Variables />} />,
+          ]}
+        />
+        <Footer />
       </main>
     </themeContext.Provider>
   );

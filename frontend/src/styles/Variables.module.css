@@ -1,0 +1,44 @@
+.preview{
+    transition: .3s ease-in-out;
+    text-align: left;
+    min-height: 15rem;
+}
+
+.selectors{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle{
+    margin-top: 2rem;
+}
+
+.sub__subtitle{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.sub__sub__subtitle{
+    font-size: 1.2rem;
+}
+
+.slider{
+    margin-bottom: 2rem;
+    color: #FFFF00;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+.button{
+    accent-color: #ffff00;
+    margin: .3rem;
+    margin-left: 4rem;
+}
+
+.label{
+    margin-right: .2rem;
+}
