@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "main_uses",
+  "collectionName": "brand_uses",
   "info": {
-    "singularName": "main-use",
-    "pluralName": "main-uses",
-    "displayName": "main-use",
+    "singularName": "brand-use",
+    "pluralName": "brand-uses",
+    "displayName": "brand-use",
     "description": ""
   },
   "options": {

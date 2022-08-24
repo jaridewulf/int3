@@ -9,7 +9,7 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await fetch(url);
+        const res = await fetch(`http://localhost:1337/api/${url}?populate=*`);
         const json = await res.json();
         setData(json);
         setLoading(false);

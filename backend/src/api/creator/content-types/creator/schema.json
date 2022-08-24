@@ -34,7 +34,7 @@
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -46,7 +46,7 @@
     "birthyear": {
       "type": "integer"
     },
-    "year_of_death": {
+    "yearofdeath": {
       "type": "integer"
     },
     "week_id": {

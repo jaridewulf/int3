@@ -3,10 +3,16 @@ import style from "../styles/UseCase.module.css";
 import { useContext } from "react";
 import { themeContext } from "../App";
 import Brand from "./Brand";
-import evianLogo from "../images/evianlogo2.svg";
+import useFetch from "../hooks/useFetch";
+import { API_URL } from "../constant";
 
 const BrandIdentity = ({ number }) => {
   const theme = useContext(themeContext);
+
+  const { loading, error, data } = useFetch("logos");
+
+  if (loading) return <p>loading...</p>;
+  if (error) return <p>error</p>;
 
   return (
     <div>
@@ -29,11 +35,12 @@ const BrandIdentity = ({ number }) => {
           className={style.brand__container}
           style={{ backgroundColor: theme.accentColor, color: theme.bgColor }}
         >
-          <Brand image={evianLogo} name="evian" />
-          <Brand image={evianLogo} name="evian" />
-          <Brand image={evianLogo} name="Panda Express" />
-          <Brand image={evianLogo} name="evian" />
-          <Brand image={evianLogo} name="evian" />
+          {data.data.map((logo) => (
+            <Brand
+              image={API_URL + logo.attributes.img.data.attributes.url}
+              name={logo.attributes.name}
+            />
+          ))}
         </div>
       </div>
       <div className={style.section}></div>
