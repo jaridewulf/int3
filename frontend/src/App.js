@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Weights from "./components/Weights";
 import Article from "./components/Article";
 import Variables from "./components/Variables";
+import Creation from "./components/Creation";
 
 export const themeContext = createContext();
 
@@ -30,6 +31,15 @@ function App() {
       >
         <Nav />
         <Header />
+        <Section
+          title={"Data"}
+          key={1}
+          value={1}
+          sides={[
+            <Article title="creation" number={1.1} content={<Creation />} />,
+            <Article title="variables" number={2.2} content={<Variables />} />,
+          ]}
+        />
         <Section
           title={"Variables"}
           key={2}
