@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import Header from "./components/Header";
 import "./App.css";
 import { createContext, useState } from "react";
 
@@ -23,7 +24,7 @@ function App() {
         }}
       >
         <Nav />
-        <header className="App-header"></header>
+        <Header />
       </main>
     </themeContext.Provider>
   );

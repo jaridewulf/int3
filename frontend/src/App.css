@@ -53,4 +53,7 @@ ul {
   background-color: #000000;
   min-height: 200vh;
   font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2rem;
 }
