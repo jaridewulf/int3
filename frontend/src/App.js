@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/Nav";
+import "./App.css";
+import { createContext, useState } from "react";
+
+export const styleContext = createContext();
 
 function App() {
+  const [style] = useState({
+    color: "#ffff00",
+    font: "helvetica",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <styleContext.Provider value={style}>
+      <main className="App">
+        <header className="App-header">
+          <span className="App-title">Frutiger</span>
+          <Nav />
+        </header>
+      </main>
+    </styleContext.Provider>
   );
 }
 
