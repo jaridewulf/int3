@@ -13,6 +13,7 @@ input:checked + label{
 
 .preview{
     font-size: 16rem;
+    text-align: center;
 }
 
 .buttons{
