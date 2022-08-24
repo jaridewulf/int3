@@ -1,0 +1,52 @@
+.illustration{
+    transform: rotate(-90deg);
+    width: 2rem;
+    margin-top: -1.5rem;
+    margin-right: 30rem;
+}
+
+.grouped{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+}
+
+.subtitle{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.section{
+    margin-bottom: 5rem;
+}
+
+.brand{
+    padding: 2rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand__image{
+    width: 10rem;
+}
+
+.brand__name{
+    font-size: 1.6rem;
+    margin-top: -2rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.brand__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}

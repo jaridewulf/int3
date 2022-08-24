@@ -16,6 +16,8 @@ import Creator from "./components/Creator";
 import swissFlag from "./images/swiss_flag.svg";
 import imgAdrian from "./images/imgAdrian.jpg";
 import Iterations from "./components/Iterations";
+import UsesCases from "./components/UseCases";
+import BrandIdentity from "./components/BrandIdentity";
 
 export const themeContext = createContext();
 
@@ -80,6 +82,24 @@ function App() {
               title="families"
               number={3.1}
               content={<Iterations number={3.1} />}
+            />,
+          ]}
+        />
+        <Section
+          last={true}
+          title={"Use cases"}
+          key={4}
+          value={4}
+          sides={[
+            <Article
+              title="Main use"
+              number={4.1}
+              content={<UsesCases number={4.1} />}
+            />,
+            <Article
+              title="Brand Identity"
+              number={4.2}
+              content={<BrandIdentity number={4.2} />}
             />,
           ]}
         />

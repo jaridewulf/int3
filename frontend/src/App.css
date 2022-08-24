@@ -49,10 +49,20 @@ ul {
 }
 
 .App {
-  background-color: #000000;
+  background-color: #000;
   min-height: 200vh;
   font-size: 1.8rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: #ffff00;
+}
+
+::selection {
+  color: #000;
+  background: #ffff00;
 }
