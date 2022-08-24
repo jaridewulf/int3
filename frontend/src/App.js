@@ -2,23 +2,30 @@ import Nav from "./components/Nav";
 import "./App.css";
 import { createContext, useState } from "react";
 
-export const styleContext = createContext();
+export const themeContext = createContext();
 
 function App() {
-  const [style] = useState({
-    color: "#ffff00",
-    font: "helvetica",
+  const [theme] = useState({
+    color: "#FFF",
+    bgColor: "#000",
+    accentColor: "#ffff00",
+    font: "Helvetica",
   });
 
   return (
-    <styleContext.Provider value={style}>
-      <main className="App">
-        <header className="App-header">
-          <span className="App-title">Frutiger</span>
-          <Nav />
-        </header>
+    <themeContext.Provider value={theme}>
+      <main
+        className="App"
+        style={{
+          fontFamily: theme.font,
+          color: theme.color,
+          backgroundColor: theme.bgColor,
+        }}
+      >
+        <Nav />
+        <header className="App-header"></header>
       </main>
-    </styleContext.Provider>
+    </themeContext.Provider>
   );
 }
 
