@@ -1,0 +1,15 @@
+.footer {
+    grid-column: 1 / span 12;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.footer__group{
+    display: flex;
+}
+
+.footer__slanted{
+    margin-left: 1rem;
+    margin-top: .5rem;
+}

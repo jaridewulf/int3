@@ -3,9 +3,11 @@
     grid-column: 2/span 10;
     justify-content: space-between;
     min-height: 100vh;
+    border-top: .2rem solid #fff;
 }
 
 .section__left{
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     margin-left: 0;
@@ -35,6 +37,7 @@
 }
 
 .section__side{
+    margin-top: 10rem;
     margin-right: 0;
     width: 59.3%;
     border-top: .2rem solid #fff;

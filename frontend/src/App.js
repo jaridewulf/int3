@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import "./App.css";
 import { createContext, useState } from "react";
 import Section from "./components/Section";
+import Footer from "./components/Footer";
 
 export const themeContext = createContext();
 
@@ -26,7 +27,8 @@ function App() {
       >
         <Nav />
         <Header />
-        <Section />
+        <Section title={"Data"} value={1} side={<Header />} />
+        <Footer />
       </main>
     </themeContext.Provider>
   );
