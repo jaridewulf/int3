@@ -21,7 +21,7 @@ const Iterations = ({ number }) => {
           type="text"
           id="sample"
           name="sample"
-          value={sampleText}
+          placeholder="Feel free to test Frutiger with your own words."
           onChange={(e) => setSampleText(e.target.value)}
         />
       </div>
