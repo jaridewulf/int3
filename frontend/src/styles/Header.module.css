@@ -15,7 +15,11 @@
 }
 
 .header__top__image{
-    max-width: 35vw;
+    min-width: 35vw;
+}
+
+.header__top__side{
+    margin-left: -3rem;
 }
 
 
