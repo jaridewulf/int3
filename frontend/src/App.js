@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import "./App.css";
 import { createContext, useState } from "react";
+import Section from "./components/Section";
 
 export const themeContext = createContext();
 
@@ -25,6 +26,7 @@ function App() {
       >
         <Nav />
         <Header />
+        <Section />
       </main>
     </themeContext.Provider>
   );

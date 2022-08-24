@@ -1,5 +1,6 @@
 .header{
     grid-column: 2/ span 10;
+    height: 100vh;
 }
 
 .header__top{
