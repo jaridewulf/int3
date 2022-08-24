@@ -1,6 +1,9 @@
 .header{
     grid-column: 2/ span 10;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__top{
@@ -12,7 +15,11 @@
 }
 
 .header__top__image{
-    max-width: 35vw;
+    min-width: 35vw;
+}
+
+.header__top__side{
+    margin-left: -3rem;
 }
 
 
@@ -32,4 +39,6 @@
 
 .header__indicator{
     margin-top: 5rem;
+    text-align: center;
+    width: 20rem;
 }
