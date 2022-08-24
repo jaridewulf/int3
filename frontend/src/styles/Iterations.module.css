@@ -1,0 +1,22 @@
+.title{
+    margin: 0;
+    font-size: 1.6rem;
+    margin-bottom: -.7rem;
+}
+
+.sample{
+    margin-right: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.inputText{
+    padding: 1rem 0;
+    background: none;
+    width: 100%;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
