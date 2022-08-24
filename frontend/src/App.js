@@ -15,6 +15,7 @@ import Creator from "./components/Creator";
 // Images / prep for database
 import swissFlag from "./images/swiss_flag.svg";
 import imgAdrian from "./images/imgAdrian.jpg";
+import Iterations from "./components/Iterations";
 
 export const themeContext = createContext();
 
@@ -68,6 +69,18 @@ function App() {
           sides={[
             <Article title="weights" number={2.1} content={<Weights />} />,
             <Article title="variables" number={2.2} content={<Variables />} />,
+          ]}
+        />
+        <Section
+          title={"Iterations"}
+          key={3}
+          value={3}
+          sides={[
+            <Article
+              title="families"
+              number={3.1}
+              content={<Iterations number={3.1} />}
+            />,
           ]}
         />
         <Footer />
