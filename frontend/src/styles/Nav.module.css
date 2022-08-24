@@ -1,0 +1,26 @@
+.nav__top{
+    display: flex;
+    transform: rotate(-90deg) translate(-100%, 0);
+    transform-origin: left top;
+    width: 100vh;
+    position: -webkit-fixed; /* Safari */
+    position: fixed;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1rem auto 0;
+}
+
+.nav__item{
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: .5rem;
+}
+
+.nav__item__accent{
+    font-size: 1rem;
+    margin-right: 1rem;
+}

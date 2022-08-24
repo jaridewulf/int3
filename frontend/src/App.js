@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import "./App.css";
+import { createContext, useState } from "react";
+
+export const themeContext = createContext();
 
 function App() {
+  const [theme] = useState({
+    color: "#FFF",
+    bgColor: "#000",
+    accentColor: "#ffff00",
+    font: "Helvetica",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <themeContext.Provider value={theme}>
+      <main
+        className="App"
+        style={{
+          fontFamily: theme.font,
+          color: theme.color,
+          backgroundColor: theme.bgColor,
+        }}
+      >
+        <Nav />
+        <Header />
+      </main>
+    </themeContext.Provider>
   );
 }
 
