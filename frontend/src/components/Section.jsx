@@ -3,10 +3,10 @@ import { themeContext } from "../App";
 import style from "../styles/Section.module.css";
 import indicator_side from "../images/indicator_side.svg";
 
-const Section = ({ title, value, side }) => {
+const Section = ({ title, value, sides }) => {
   const theme = useContext(themeContext);
   return (
-    <section className={style.section}>
+    <section className={style.section} key={value}>
       <div className={style.section__left}>
         <h2
           className={style.section__title}
@@ -21,7 +21,11 @@ const Section = ({ title, value, side }) => {
           className={style.section__indicator}
         />
       </div>
-      <div className={style.section__side}>{side}</div>
+      <div className={style.section__side}>
+        {sides.map((side) => {
+          return side;
+        })}
+      </div>
     </section>
   );
 };

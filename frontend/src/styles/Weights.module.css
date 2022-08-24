@@ -1,0 +1,23 @@
+.button{
+    accent-color: #ffff00;
+    margin: .3rem;
+}
+
+.label{
+    margin-right: 1rem;
+}
+
+input:checked + label{
+    color: #ffff00;
+}
+
+.preview{
+    font-size: 16rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 3rem auto;
+}
