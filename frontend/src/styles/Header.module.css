@@ -42,3 +42,38 @@
     text-align: center;
     width: 20rem;
 }
+
+@media only screen and (width <= 830px) {
+    .header__top{
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+    }
+}
+
+@media only screen and (width <= 500px) {
+    .header__top__side__title{
+        font-size: 3.2rem;
+    }
+}
+
+@media only screen and (width <= 450px) {
+    .header__indicator{
+        width: 15rem;
+    }
+}
+
+@media only screen and (width <= 360px) {
+    .header__top__image{
+        min-height: 22vh;
+    }
+    .header__indicator{
+        width: 12rem;
+    }
+    .header__top__side__title{
+        font-size: 2.2rem;
+    }
+    .header__top__side__container{
+        flex-direction: column;
+    }
+}

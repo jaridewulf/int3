@@ -33,3 +33,16 @@
     transition: .3s ease-in-out;
     align-items: center;
 }
+
+@media only screen and (width <= 1200px) {
+    .card{
+        flex-direction: column;
+    }
+    .preview{
+        margin-top: 2rem;
+    }
+
+    .info{
+        width: 100%;
+    }
+}

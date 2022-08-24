@@ -22,7 +22,9 @@ const BrandIdentity = ({ number }) => {
             className={style.illustration}
           />
         </div>
-        <p>Frutiger is also used in many logos, examples can be found below.</p>
+        <p className={style.text}>
+          Frutiger is also used in many logos, examples can be found below.
+        </p>
         <div
           className={style.brand__container}
           style={{ backgroundColor: theme.accentColor, color: theme.bgColor }}

@@ -15,7 +15,7 @@ const Creator = ({
   const theme = useContext(themeContext);
   return (
     <div className={style.card}>
-      <img src={img} alt={`${name}`} />
+      <img src={img} alt={`${name}`} className={style.img} />
       <div className={style.data}>
         <p className={style.name} style={{ color: theme.accentColor }}>
           {name}

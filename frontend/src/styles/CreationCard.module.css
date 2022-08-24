@@ -7,9 +7,28 @@
     font-size: 1.6rem;
 }
 
-.img{
-}
-
 .card{
     max-width: 21rem;
+}
+
+@media only screen and (width <= 1690px) {
+    .card{
+        max-width: 15rem;
+    }
+
+    .img{
+        max-height: 10vh;
+    }
+}
+
+@media only screen and (width <= 1310px) {
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width <= 1200px) {
+    .card{
+        padding: 0 2rem 1rem;
+    }
 }

@@ -27,7 +27,7 @@
 
 .brand{
     padding: 2rem;
-    width: 12rem;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,4 +49,33 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+@media only screen and (width <= 1300px) {
+    .illustration{
+        margin-right: 20rem;
+    }
+}
+
+@media only screen and (width <= 1100px) {
+    .illustration{
+        margin-right: 10rem;
+    }
+}
+
+@media only screen and (width <= 720px) {
+    .illustration{
+        margin-right: 0rem;
+    }
+    .text{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (width <= 470px) {
+    .illustration{
+        display: none;
+    }
+}
+

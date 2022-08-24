@@ -39,3 +39,44 @@
 .section__side{
     width: 59.3%;
 }
+
+@media only screen and (width <= 1430px) {
+    .section__title{
+        font-size: 3rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (width <= 900px) {
+    .section__title{
+        font-size: 2.2rem;
+        width: 70%;
+    }
+}
+
+@media only screen and (width <= 600px) {
+    .section__title{
+        font-size: 1.8rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (width <= 510px) {
+    .section{
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (width <= 450px) {
+    .section__title{
+        font-size: 1.4rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (width <= 380px) {
+    .section__title{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}

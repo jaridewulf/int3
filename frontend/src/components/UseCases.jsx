@@ -20,7 +20,7 @@ const UsesCases = ({ number }) => {
             className={style.illustration}
           />
         </div>
-        <p>
+        <p className={style.text}>
           Originally designed for clear visibility on airport signs, Charles De
           Gaulle International Airport was the airport to commission this font.
         </p>
@@ -37,7 +37,7 @@ const UsesCases = ({ number }) => {
             className={style.illustration}
           />
         </div>
-        <p>
+        <p className={style.text}>
           Because of the clear visibilty Frutiger is often used by government
           agencies. It’s been used on Swiss passports and by the British Royal
           Navy, the Finnish Defence Force and even on road signs in Switzerland.
