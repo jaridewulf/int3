@@ -4,7 +4,7 @@
   "info": {
     "singularName": "main-use",
     "pluralName": "main-uses",
-    "displayName": "main_use",
+    "displayName": "main-use",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "text": {
-      "type": "richtext"
+      "type": "string"
     },
     "week_id": {
       "type": "integer"

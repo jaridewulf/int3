@@ -47,21 +47,7 @@ function App() {
           value={1}
           sides={[
             <Article title="creation" number={1.1} content={<Creation />} />,
-            <Article
-              title="creator"
-              number={1.2}
-              content={
-                <Creator
-                  name="Adrian Frutiger"
-                  job="Digital Typographer"
-                  company="Linotype Foundry"
-                  img={imgAdrian}
-                  nationality={swissFlag}
-                  birthyear={1928}
-                  dayOfDeath={2015}
-                />
-              }
-            />,
+            <Article title="creator" number={1.2} content={<Creator />} />,
           ]}
         />
         <Section

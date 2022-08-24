@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_uses",
+  "info": {
+    "singularName": "brand-use",
+    "pluralName": "brand-uses",
+    "displayName": "brand-use",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "week_id": {
+      "type": "integer"
+    }
+  }
+}

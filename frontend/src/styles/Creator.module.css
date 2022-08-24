@@ -48,3 +48,59 @@
     flex-direction: column;
     align-items: flex-end;
 }
+
+@media only screen and (width <= 1320px) {
+    .name{
+        font-size: 2.8rem;
+    }
+    .job{
+        font-size: 1.4rem;
+    }
+    .company{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (width <= 1150px) {
+    .illustration{
+        display: none;
+    }
+}
+
+@media only screen and (width <= 900px) {
+    .name{
+        font-size: 2.2rem;
+    }
+    .job{
+        font-size: 1rem;
+    }
+    .company{
+        font-size: .8rem;
+    }
+    .age{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (width <= 800px) {
+    .nationality{
+        display: none;
+    }
+}
+
+@media only screen and (width <= 690px) {
+    .nationality{
+        display: none;
+    }
+    .img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .card{
+        flex-direction: column;
+    }
+
+    .data{
+        margin: 0;
+    }
+}

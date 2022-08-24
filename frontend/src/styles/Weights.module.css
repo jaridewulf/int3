@@ -22,3 +22,27 @@ input:checked + label{
     width: 50%;
     margin: 3rem auto;
 }
+
+@media only screen and (width <= 750px) {
+    .preview{
+        font-size: 10rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (width <= 480px) {
+    .label{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width <= 1200px) {
+    .card{
+        padding: 0 2rem 1rem;
+    }
+}

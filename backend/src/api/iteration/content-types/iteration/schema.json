@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iterations",
+  "info": {
+    "singularName": "iteration",
+    "pluralName": "iterations",
+    "displayName": "iteration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "releaseyear": {
+      "type": "integer"
+    },
+    "woff": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "week_id": {
+      "type": "integer"
+    }
+  }
+}

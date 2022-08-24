@@ -42,3 +42,34 @@
 .label{
     margin-right: .2rem;
 }
+
+@media only screen and (width <= 1150px) {
+    .selectors{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (width <= 785px) {
+    .preview{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width <= 785px) {
+    .preview{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (width <= 560px) {
+    .selectors{
+        justify-content: center;
+    }
+    .buttons{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .button{
+        margin-left: 0;
+    }
+}

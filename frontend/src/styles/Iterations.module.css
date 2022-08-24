@@ -20,3 +20,16 @@
     outline: none;
     font-size: 2rem;
 }
+
+@media only screen and (width <= 1200px) {
+    .inputText{
+        font-size: 1.2rem;;
+    }
+}
+
+@media only screen and (width <= 730px) {
+    .inputText{
+        height: 2rem;
+        overflow: visible;
+    }
+}
