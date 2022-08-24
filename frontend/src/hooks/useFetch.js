@@ -9,7 +9,9 @@ const useFetch = (url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`http://localhost:1337/api/${url}?populate=*`);
+        const res = await fetch(
+          `https://int3--backend.herokuapp.com/api/${url}?populate=*`
+        );
         const json = await res.json();
         setData(json);
         setLoading(false);
