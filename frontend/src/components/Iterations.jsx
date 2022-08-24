@@ -17,7 +17,6 @@ const Iterations = ({ number }) => {
           Sample text
         </h2>
         <input
-          autoFocus
           className={style.inputText}
           type="text"
           id="sample"
